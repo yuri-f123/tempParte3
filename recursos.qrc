@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/recursos">
+        <file>icones/caixa.png</file>
+        <file>icones/circulo.png</file>
+        <file>icones/cutcaixa.png</file>
+        <file>icones/cutcirculo.png</file>
+        <file>icones/cutelipse.png</file>
+        <file>icones/elipse.png</file>
+        <file>icones/putvoxel.png</file>
+        <file>icones/voxel.png</file>
+    </qresource>
+</RCC>

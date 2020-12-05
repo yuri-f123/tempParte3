@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>726</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <widget class="Visual" name="widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>691</width>
+        <height>571</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>500</width>
+        <height>500</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="title">
+         <string>Novo Desenho</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="2">
+          <widget class="QLCDNumber" name="lcdNumberTamX">
+           <property name="intValue" stdset="0">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSlider" name="horizontalSliderTamY">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLCDNumber" name="lcdNumberTamZ">
+           <property name="intValue" stdset="0">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSlider" name="horizontalSliderTamZ">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Criar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="horizontalSliderTamX">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>Y</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>X</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLCDNumber" name="lcdNumberTamY">
+           <property name="intValue" stdset="0">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Z</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Cor</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="2">
+            <widget class="QLCDNumber" name="lcdNumberRed"/>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLCDNumber" name="lcdNumberGreen"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Vermelho</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Verde</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Azul</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="horizontalSliderGreen">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSlider" name="horizontalSliderBlue">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLCDNumber" name="lcdNumberBlue"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSlider" name="horizontalSlideRed">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Caixa</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>X</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSlider" name="horizontalSliderX">
+             <property name="maximum">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLCDNumber" name="lcdNumberX"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Y</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="horizontalSlideYr">
+             <property name="maximum">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLCDNumber" name="lcdNumberY"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Z</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSlider" name="horizontalSliderZ">
+             <property name="maximum">
+              <number>50</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLCDNumber" name="lcdNumberZ"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>Esfera</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="2">
+            <widget class="QLCDNumber" name="lcdNumberRaio"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Raio</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSlider" name="horizontalSliderRaio">
+             <property name="maximum">
+              <number>25</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Elipse</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>RaioX</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSlider" name="horizontalSliderRaioX">
+             <property name="maximum">
+              <number>25</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLCDNumber" name="lcdNumberRaioX"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>RaioY</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="horizontalSliderRaioY">
+             <property name="maximum">
+              <number>25</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLCDNumber" name="lcdNumberRaioY"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>RaioZ</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSlider" name="horizontalSliderRaioZ">
+             <property name="maximum">
+              <number>25</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLCDNumber" name="lcdNumberRaioZ"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>Plano XY - Modificar altura</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Z</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSlider" name="horizontalSliderAltura">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLCDNumber" name="lcdNumberAltura"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSalvar"/>
+   <addaction name="actionputVoxel"/>
+   <addaction name="actioncutVoxel"/>
+   <addaction name="actionputBox"/>
+   <addaction name="actioncutBox"/>
+   <addaction name="actionputSphere"/>
+   <addaction name="actioncutSphere"/>
+   <addaction name="actionputEllipsoid"/>
+   <addaction name="actioncutEllipsoid"/>
+  </widget>
+  <action name="actionNovo">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionputVoxel">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/putvoxel.png</normaloff>:/recursos/icones/putvoxel.png</iconset>
+   </property>
+   <property name="text">
+    <string>putVoxel</string>
+   </property>
+   <property name="toolTip">
+    <string>putVoxel</string>
+   </property>
+  </action>
+  <action name="actioncutVoxel">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/voxel.png</normaloff>:/recursos/icones/voxel.png</iconset>
+   </property>
+   <property name="text">
+    <string>cutVoxel</string>
+   </property>
+  </action>
+  <action name="actionputBox">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/caixa.png</normaloff>:/recursos/icones/caixa.png</iconset>
+   </property>
+   <property name="text">
+    <string>putBox</string>
+   </property>
+  </action>
+  <action name="actioncutBox">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/cutcaixa.png</normaloff>:/recursos/icones/cutcaixa.png</iconset>
+   </property>
+   <property name="text">
+    <string>cutBox</string>
+   </property>
+  </action>
+  <action name="actionputSphere">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/circulo.png</normaloff>:/recursos/icones/circulo.png</iconset>
+   </property>
+   <property name="text">
+    <string>putSphere</string>
+   </property>
+  </action>
+  <action name="actioncutSphere">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/cutcirculo.png</normaloff>:/recursos/icones/cutcirculo.png</iconset>
+   </property>
+   <property name="text">
+    <string>cutSphere</string>
+   </property>
+  </action>
+  <action name="actionputEllipsoid">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/elipse.png</normaloff>:/recursos/icones/elipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>putEllipsoid</string>
+   </property>
+  </action>
+  <action name="actioncutEllipsoid">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/icones/cutelipse.png</normaloff>:/recursos/icones/cutelipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>cutEllipsoid</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Visual</class>
+   <extends>QWidget</extends>
+   <header>visual.h</header>
+   <container>1</container>
+   <slots>
+    <slot>tempSetTamX(int)</slot>
+    <slot>tempSetTamY(int)</slot>
+    <slot>tempSetTamZ(int)</slot>
+    <slot>setTam()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>horizontalSlideRed</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>lcdNumberRed</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>856</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>926</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderTamX</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberTamX</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>857</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>892</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderTamY</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberTamY</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>857</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>881</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderTamZ</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberTamZ</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>857</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>885</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberGreen</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>856</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>882</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderBlue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberBlue</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>856</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>883</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderX</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberX</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>851</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>887</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlideYr</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberY</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>823</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>878</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderZ</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberZ</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>833</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>895</x>
+     <y>409</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRaio</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaio</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>856</x>
+     <y>470</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>877</x>
+     <y>468</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRaioX</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaioX</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>849</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>878</x>
+     <y>533</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRaioY</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaioY</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>844</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>895</x>
+     <y>571</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderRaioZ</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaioZ</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>836</x>
+     <y>586</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>885</x>
+     <y>590</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderAltura</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberAltura</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>663</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>896</x>
+     <y>664</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderTamX</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>tempSetTamX(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>775</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderTamY</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>tempSetTamY(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>758</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderTamZ</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>tempSetTamZ(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>762</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>setTam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>789</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>596</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
